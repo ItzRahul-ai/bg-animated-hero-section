@@ -5,7 +5,7 @@
 </head>
 <body>
  <!-- for main div/container -->
-  <div class="relative bg-gradient-to-bl from-indigo-600 via-purpel-500 to-pink-500 min-h-screen flex items-center">
+  <div class="relative bg-gradient-to-bl from-indigo-600 via-purpel-500 to-pink-500 min-h-screen flex items-center overflow-hidden">
     
    <!-- for background blur boxes -->
    <div class="flex flex-col">
@@ -50,6 +50,36 @@
        </div>
 
     </div>
+    <!-- for main container -->
+     <div class="container mx-auto flex flex-col items-center justify-center ">
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
+        <!-- left fontent -->
+        <div class=" rounded-lg shadow-lg p-8 w-full md:w-1/2 md:text-left text-center">
+          <h1 class="text-3xl font-bold text-center text-white mb-6">Welcome to My Page</h1>
+          <p class="text-gray-200 text-center mb-4">This is a simple example of a gradient background with blurred boxes.</p>
+          <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transition duration-500 shadow-lg transform hover:-translate-y-1 text-center">Get Started</button>
+        </div>
+        <!-- right content -->
+        <div class="md:w-1/2 w-full rounded-lg shadow-lg p-8">
+
+          <div  class="relative w-full"> <!--start image section -->
+
+            <div class="w-full max-w-lg h-80 md:h-96 bg-gradient-to-br from-indigo-600 via-purpel-500 to-pink-500  bg-opacity-20 rounded-2xl backdrop-filter backdrop-blur-sm border border-white border-opacity-20 shadow-lg overflow-hidden">
+                
+                <div class="h-full w-full flex items-center justify-center text-white text-opcity-70">
+                    <img src="./asset/img.png" alt="">
+                </div>
+
+            </div>
+            <div class="w-20 h-20 bg-yellow-400 opacity-50 blur-md absolute -top-6 -right-0"></div>
+            <div class="w-20 h-20 bg-blue-400 opacity-50 blur-md absolute -bottom-[16px] -left-4"></div>
+        </div> <!--end image section -->
+  
+        </div>
+      </div>
+
+     </div>
 
   </div>
 </body>
